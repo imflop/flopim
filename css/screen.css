@@ -8,7 +8,12 @@ http://www.designkindle.com
 
 /* =Fonts
 ============================================================================== */
-
+@font-face {
+    font-family: "OFL Sorts Mill Goudy TT";
+    font-style: normal;
+    font-weight: normal;
+    src: local("OFL Sorts Mill Goudy TT"), local("OFLGoudyStMTT"), url("http://themes.googleusercontent.com/font?kit=9ZZVVBRCceNnPBXqWLH8INC5-FYgMOm9n-SazquSTDY") format("woff");
+}
 
 /* =Imports
 ============================================================================== */
@@ -27,7 +32,8 @@ http://www.designkindle.com
 		
 		body {
 			height: 100%;
-			font: 62.5%/1.85 Arial, Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", Tahoma, Verdana;
+			/*font: 62.5%/1.85 Arial, Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", Tahoma, Verdana;*/
+            font: 62.5%/1.85 'OFL Sorts Mill Goudy', 'OFL Sorts Mill Goudy TT', serif;
 			color: #3d4350;
 			text-shadow: #e7eaef 0 1px 0;
 			background: url(../images/bg-main.gif) top center repeat #b1b5be;
@@ -154,7 +160,7 @@ http://www.designkindle.com
 		#content .copy {
 			margin: 0 auto;
 			padding: 60px 0 0 0;
-			width: 960px;
+			width: 630px;
 			}
 			
 		/* left and right columns */
@@ -469,7 +475,7 @@ http://www.designkindle.com
 				
 		#about {
 			padding: 0 15px;
-			width: 930px;
+			width: 600px;
 			position: relative;
 			}
 			
