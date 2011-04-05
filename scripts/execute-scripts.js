@@ -15,11 +15,11 @@ $(document).ready(function() {
     	
     	// Main Navigation
     	
-    	$("#mainNav").localScroll();
+    	//$("#mainNav").localScroll();
     	
     	// "To the Top" links
     	
-    	$(".toTheTop").localScroll();
+    	//$(".toTheTop").localScroll();
     	
 
     /* =Social links

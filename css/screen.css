@@ -8,12 +8,7 @@ http://www.designkindle.com
 
 /* =Fonts
 ============================================================================== */
-@font-face {
-    font-family: "OFL Sorts Mill Goudy TT";
-    font-style: normal;
-    font-weight: normal;
-    src: local("OFL Sorts Mill Goudy TT"), local("OFLGoudyStMTT"), url("http://themes.googleusercontent.com/font?kit=9ZZVVBRCceNnPBXqWLH8INC5-FYgMOm9n-SazquSTDY") format("woff");
-}
+
 
 /* =Imports
 ============================================================================== */
@@ -32,8 +27,8 @@ http://www.designkindle.com
 		
 		body {
 			height: 100%;
-			/*font: 62.5%/1.85 Arial, Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", Tahoma, Verdana;*/
-            font: 62.5%/1.85 'OFL Sorts Mill Goudy', 'OFL Sorts Mill Goudy TT', serif;
+			font: 62.5%/1.85 Arial, Helvetica, sans-serif, "Lucida Grande", "Lucida Sans", Tahoma, Verdana;
+            /*font: 62.5%/1.85 'OFL Sorts Mill Goudy', 'OFL Sorts Mill Goudy TT', serif;*/
 			color: #3d4350;
 			text-shadow: #e7eaef 0 1px 0;
 			background: url(../images/bg-main.gif) top center repeat #b1b5be;
@@ -109,8 +104,8 @@ http://www.designkindle.com
 		#mainNav a {
 			height: 43px;
 			display: block;
-			background: url(../images/main-nav.png) no-repeat;
-			text-indent: -9999px;
+			/*background: url(../images/main-nav.png) no-repeat;
+			text-indent: -9999px;*/
 			overflow: hidden;
 			}
 			
@@ -202,7 +197,10 @@ http://www.designkindle.com
 			color: #23262e;
 			text-decoration: underline;
 			}
-			
+		a.little {
+		    font-weight:normal;
+		    font-size:18px;
+		}	
 		/* to the top link */
 		
 		.toTheTop {
@@ -288,7 +286,7 @@ http://www.designkindle.com
 			}
 			
 		h1.mainTitle { line-height: 70px; }
-		h2.mainTitle { padding-top: 7px; line-height: 63px; }
+		h2.mainTitle { /*padding-top: 7px;*/ padding-top:30px;line-height: 63px; }
 			
 		/* strong */
 		
@@ -344,6 +342,10 @@ http://www.designkindle.com
 			position: relative;
 			top: 19px;
 			}
+		#wc span {
+		    float: right;
+			position: relative;
+		}
 			
 		#workControls a, #workControls a:visited {
 			margin-left: 8px;
@@ -480,6 +482,13 @@ http://www.designkindle.com
 			}
 			
 		/* Profile blurb and picture */
+		#profile-main{
+		    margin: -7px 0 -1px -10px;
+			padding: 10px 0 22px 11px;
+			font-size: 27px;
+			line-height: 30px;
+			text-align:center;:		    		    
+		}	
 		
 		#profile {
 			margin: -7px 0 30px -10px;
@@ -488,6 +497,11 @@ http://www.designkindle.com
 			font-size: 20px;
 			line-height: 30px;
 			}
+		
+		#bottomtheline {
+		    text-align:center;
+		    font-style:italic;
+		}
 			
 		/* Services icon titles */
 		
