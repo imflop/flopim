@@ -1,0 +1,183 @@
+* { margin:0; padding:0; }
+
+html, body {
+    color:333;
+    background-color:#f0f0f0;
+    border-top:2px solid #111;
+    font-size:100%;
+    line-height:1.5em;
+    /*font-family:"Times New Roman", Georgia, Times, serif;*/
+    /*font-family:'OFL Sorts Mill Goudy TT', serif;*/
+    font-family:'Josefin Sans', sans-serif;
+
+	height:100%;
+
+}
+
+ul li { list-style-type:none }
+
+.center { margin:0 auto; width:600px; }
+
+#wrapper {
+    width:100%;
+    height:auto !important;
+	position: relative;
+    text-align:center;
+    margin:0 auto;
+    background-color:#f0f0f0;
+    min-height:100%;
+}
+header {
+    text-transform:lowercase;
+    line-height:50px;
+    overflow:hidden;
+    margin-bottom:100px;
+}
+header h1 { 
+    font-size:32px;
+    float:left;
+    width:240px;
+    font-weight:normal;
+}
+header a { 
+    text-decoration:none;
+    color:#222;
+}
+header a:hover {
+    /*color:#2875cc;*/
+    color:#444;
+    text-shadow:0 0 5px rgba(50, 200, 255, 0.5);
+    text-decoration:none;
+}
+nav {
+    float:left;
+    text-align:right;
+    text-transform:lowercase;
+    width:360px;
+    font-size:28px;
+}
+nav a { color:#2875aa; }
+nav a:hover { color:#2875aa; }
+#top { 
+    position:absolute;
+    top:20px;
+    right:0;
+}
+#top a {
+    display:block;
+    height:40px;
+    color:#aaa;
+    line-height:40px;
+    text-decoration:none;
+    width:40px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+#content {
+    width:600px;
+    margin:0 auto 100px;
+
+}
+.column {
+    margin-bottom:-1px;
+    padding-top:50px;
+    text-align:center;
+    font:38px/46px 'Josefin Sans', sans-serif;
+}
+.column p { 
+    padding-bottom:20px;
+    text-shadow:0 1px 1px #fff;
+}
+.column a { 
+    color:#444;
+    text-decoration:none;
+}
+.column a:hover {
+    color:#2875cc;
+    text-shadow:0 0 5px rgba(50, 200, 255, 0.5);
+    text-decoration:underline;
+}
+
+footer {
+    /*margin:32px auto 0;*/
+    margin:0 auto;
+    text-align:left;
+    font-size:14px;
+    line-height:20px;
+    width:100%;
+    position:relative;
+    background-color:#111;
+    border-top:4px solid #f5f5f5;
+    overflow:hidden;
+}
+#twitter {
+    margin:32px auto 0;
+    height:240px;
+    float:left;
+    width:480px;
+}
+.tweet { color:#777; }
+.tweet a { color:#333; text-shadow:0 1px 0 #000; text-decoration:none; }
+.tweet a:hover { color:#2875aa; text-shadow:0 1px 5px rgba(58,164,236,0.5); }
+.tweet_join { display:none; }
+.tweet_text {
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:13px;
+    font-weight:normal;
+}
+
+#links {
+    margin:5px 0 0 0;
+    margin:32px auto 0;
+    width:110px;
+    height:240px;
+    float:left;
+    padding-left:10px;
+}
+#links a {
+    color:#333;
+    font-size:14px;
+    text-shadow:0 1px 0 #000;
+    text-decoration:none;
+}
+#links a:hover {
+    padding-left:5px;
+    color:#2875aa;
+    text-shadow:0 1px 5px rgba(58,164,236,0.5);
+}
+footer h2 {
+    width:200px;
+    height:30px;
+    font-size:14px;
+    color:#666;
+    text-transform:uppercase;
+}
+footer p {
+    margin:16px 0 0 0;
+    color:#777;
+    line-height:21px;
+    width:350px;
+}
+#links h3 {
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:0.2em;
+    margin:0 0 17px 0;
+    font-weight:normal;
+    color:#666;
+}
+#totop {
+    position:absolute;
+    display:block;
+    top:10px;
+    right:32px;
+    height:24px;
+    line-height:24px;
+    color:#666;
+    font-size:10px;
+    text-align:right;
+    text-decoration:none;
+    font-family:Verdana, "Lucida Grande", Lucida, sans-serif;
+}
+#totop:hover { color:#ccc; }

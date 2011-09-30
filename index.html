@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>flop I'm</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/jquery.content-panel-switcher.css" type="text/css" charset="utf-8">
+    <script src="js/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.tweet.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.content-panel-switcher.js" type="text/javascript" charset="utf-8"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&v2' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            jcps.fader(300, '#content');
+        });
+    </script>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="center">
+            <h1><a href="/">flop page's</a></h1>
+            <nav>
+                <a href="#" class="switcher" id="main">main</a>
+                <a href="#" class="switcher" id="about">about</a>
+                <a href="http://blog.flop.im">blog</a>
+                <a href="http://feeds.feedburner.com/imflop">feed</a>
+            </nav>
+        </div>
+        <div id="top">
+            <a href="#down" title="my infos">&amp;</a>
+        </div>
+    </header><!-- end header -->
+
+    <div id="content"></div><!-- end content -->
+
+    <div class="switcher-content show" id="main-content">
+        <div class="column">
+            <p>Hello, I'm Oleg.</p>
+            <p>I'm programmer and also student of Northen Federal University.</p>
+            <p>If you want to get in touch with me, <a href="mailto:imflop@gmail.com">email</a> is best.</p>
+        </div>
+    </div>
+
+    <div class="switcher-content" id="about-content">
+        <div class="column">
+            <p>Some about what I do</p>
+        </div>
+    </div>
+
+</div><!-- end wrapper -->
+<footer>
+    <div class="center">
+        <div id="twitter">
+            <h2>Last twit</h2>
+            <div class="tweet"></div>
+            <br/>
+            <br/>
+        </div>
+        <div id="links">
+            <h2>My links</h2>
+            <ul>
+                <li><a href="http://twitter.com/#!/imflop">Twitter</a></li>
+                <li><a href="http://feeds.feedburner.com/imflop">RSS</a></li>
+                <li><a href="#">Bitbucket</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Codegoogle</a></li>
+                <li><a href="#">Codegoogle</a></li>
+            </ul>
+        </div>
+        <div id="down">
+            <a href="#top" title="scroll to top" id="totop">back to top</a>
+        </div>
+    </div>
+</footer><!-- end footer -->
+<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
