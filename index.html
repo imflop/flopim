@@ -4,78 +4,74 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
     <title>flop I'm</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="css/jquery.content-panel-switcher.css" type="text/css" charset="utf-8">
-    <script src="js/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/jquery.tweet.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/jquery.content-panel-switcher.js" type="text/javascript" charset="utf-8"></script>
-    
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&v2' rel='stylesheet' type='text/css'>
 
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/bs-overload.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/jquery.content-panel-switcher.css" type="text/css" charset="utf-8">
+    <!-- Google web fonts *Josefin* -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- jQuery content switcher -->
+    <script src="js/jquery.content-panel-switcher.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function() {
-            jcps.fader(300, '#content');
+            jcps.fader(300, '#switcher-panel');
         });
     </script>
 </head>
+
 <body>
-<div id="wrapper">
-    <header>
-        <div class="center">
-            <h1><a href="/">flop page's</a></h1>
-            <nav>
-                <a href="#" class="switcher" id="main">main</a>
-                <a href="#" class="switcher" id="about">about</a>
-                <a href="http://blog.flop.im">blog</a>
-                <a href="http://feeds.feedburner.com/imflop">feed</a>
-            </nav>
-        </div>
-        <div id="top">
-            <a href="#down" title="my infos">&amp;</a>
-        </div>
-    </header><!-- end header -->
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="span4">
+                    <h1 class="title">
+                        <a href="#" class="switcher" id="main">flop page's</a>
+                    </h1>
+                </div>
+                <div class="span8 offset4">
+                    <nav>
+                        <a href="http://blog.flop.im">blog</a>
+                        <a href="#" class="switcher" id="projects">projects</a>
+                        <a href="#" class="switcher" id="about">about</a>
+                        <a href="http://feeds.feedburner.com/imflop">feed</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- for slick switcher -->
+        <div id="switcher-panel"></div>
 
-    <div id="content"></div><!-- end content -->
+        <div class="row">
+            <div class="switcher-content show" id="main-content">
+                <div class="span14 center-text">
+                    <p>Hello, I'm Oleg.</p>
+                    <p>I'm programmer and also student of Northen Federal University.</p>
+                    <p>If you want to get in touch with me, <a href="mailto:imflop@gmail.com">email</a> is best.</p>
+                </div>
+            </div>
 
-    <div class="switcher-content show" id="main-content">
-        <div class="column">
-            <p>Hello, I'm Oleg.</p>
-            <p>I'm programmer and also student of Northen Federal University.</p>
-            <p>If you want to get in touch with me, <a href="mailto:imflop@gmail.com">email</a> is best.</p>
+            <div class="switcher-content" id="about-content">
+                <div class="span14 about-text">
+                    <h1>About</h1>
+                    <p>I'm Oleg, I'm from Arkhangelsk, Russia.<br/>I do a lot of different things.</p>
+                    <p>If you want to get in touch with me you can <a href="mailto:imflop@gmail.com">email me</a> or
+                    find me on <a href="">twitter</a>, <a href="http://bitbucket.org/flop">bitbucket</a>, <a href="http://github.com/imflop">github.</a></p>
+                </div>
+            </div>
+
+            <div class="switcher-content" id="projects-content">
+                <div class="span14 center-text">
+                    <p>Projects</p>
+                </div>
+            </div>
         </div>
+
+        <footer>
+            <p><i>Follow me, I'm on <a href="http://bitbucket.org/flop"><i>Bitbucket</i></a>, <a href="http://github.com/imflop"><i>Github</i></a> & <a href="http://twitter.com/#!/imflop"><i>Twitter</i></a></i></p>
+        </footer>
     </div>
-
-    <div class="switcher-content" id="about-content">
-        <div class="column">
-            <p>Some about what I do</p>
-        </div>
-    </div>
-
-</div><!-- end wrapper -->
-<footer>
-    <div class="center">
-        <div id="twitter">
-            <h2>Last twit</h2>
-            <div class="tweet"></div>
-            <br/>
-            <br/>
-        </div>
-        <div id="links">
-            <h2>My links</h2>
-            <ul>
-                <li><a href="http://twitter.com/#!/imflop">Twitter</a></li>
-                <li><a href="http://feeds.feedburner.com/imflop">RSS</a></li>
-                <li><a href="#">Bitbucket</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="#">Codegoogle</a></li>
-                <li><a href="#">Codegoogle</a></li>
-            </ul>
-        </div>
-        <div id="down">
-            <a href="#top" title="scroll to top" id="totop">back to top</a>
-        </div>
-    </div>
-</footer><!-- end footer -->
-<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
+

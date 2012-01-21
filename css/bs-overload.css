@@ -1,0 +1,35 @@
+body {
+    background-color:#f0f0f0;
+    border-top: 2px solid #111111;
+}
+
+h1, h2, h3, h4, h5 { font: 38px/46px 'Josefin Sans',sans-serif; }
+
+a:hover { color:#0069d6; }
+
+header { margin-top:10px; }
+header a { font: 38px/46px 'Josefin Sans',sans-serif; }
+.title a { color:#202020; }
+
+nav {
+    float:left;
+    font-size:28px;
+    text-align:right;
+    text-transform:lowercase;
+    line-height:36px;
+}
+nav a { font: 38px/46px 'Josefin Sans',sans-serif; }
+
+.center-text {
+    padding-top: 150px;
+    text-align: center;
+    padding-bottom:50px;
+}
+.center-text p { font: 38px/46px 'Josefin Sans',sans-serif; }
+.about-text p { font: 22px/28px 'Josefin Sans',sans-serif; }
+
+footer { border-top:1px solid #e0e0e0; }
+footer p {
+    font: 20px/24px 'Josefin Sans',sans-serif;
+    text-align:center;
+}
