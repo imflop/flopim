@@ -8,16 +8,33 @@
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="css/bs-overload.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="css/jquery.content-panel-switcher.css" type="text/css" charset="utf-8">
+
     <!-- Google web fonts *Josefin* -->
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
     <script src="js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+
     <!-- jQuery content switcher -->
     <script src="js/jquery.content-panel-switcher.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function() {
             jcps.fader(300, '#switcher-panel');
         });
+    </script>
+
+    <!-- Google analytics -->
+	<script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22627550-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
     </script>
 </head>
 
@@ -54,16 +71,21 @@
 
             <div class="switcher-content" id="about-content">
                 <div class="span14 about-text">
-                    <h1>About</h1>
+                    <h2>About</h2>
                     <p>I'm Oleg, I'm from Arkhangelsk, Russia.<br/>I do a lot of different things.</p>
                     <p>If you want to get in touch with me you can <a href="mailto:imflop@gmail.com">email me</a> or
                     find me on <a href="">twitter</a>, <a href="http://bitbucket.org/flop">bitbucket</a>, <a href="http://github.com/imflop">github.</a></p>
+                    <br />
+                    <h2>Programming</h2>
+                        <p>I study to Institute of Information Technologies of Northen Federal University, specialization Software Engineer.</p>
+                        <p>I have done a lot of different things in the field so far. Right now the things that are captivating me are artificial intelligence and clean, simple, useful web applications.</p>
+                        <p>Also I work as a software developer, mostly doing web back-end stuff in Python.</p>
                 </div>
             </div>
 
             <div class="switcher-content" id="projects-content">
                 <div class="span14 center-text">
-                    <p>Projects</p>
+                    <p>Projects page in progress</p>
                 </div>
             </div>
         </div>

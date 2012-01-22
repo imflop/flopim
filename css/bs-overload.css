@@ -26,6 +26,10 @@ nav a { font: 38px/46px 'Josefin Sans',sans-serif; }
     padding-bottom:50px;
 }
 .center-text p { font: 38px/46px 'Josefin Sans',sans-serif; }
+.about-text {
+    padding-top: 50px;
+    padding-bottom:50px;
+}
 .about-text p { font: 22px/28px 'Josefin Sans',sans-serif; }
 
 footer { border-top:1px solid #e0e0e0; }
