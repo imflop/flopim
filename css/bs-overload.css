@@ -3,7 +3,11 @@ body {
     border-top: 2px solid #111111;
 }
 
+.container { width:620px; }
+
 h1, h2, h3, h4, h5 { font: 38px/46px 'Josefin Sans',sans-serif; }
+
+.title { width:200px; float:left; }
 
 a:hover { color:#0069d6; }
 
@@ -17,6 +21,7 @@ nav {
     text-align:right;
     text-transform:lowercase;
     line-height:36px;
+    width:420px;
 }
 nav a { font: 38px/46px 'Josefin Sans',sans-serif; }
 
@@ -34,6 +39,7 @@ nav a { font: 38px/46px 'Josefin Sans',sans-serif; }
 
 footer { border-top:1px solid #e0e0e0; }
 footer p {
+    padding-top: 13px;
     font: 20px/24px 'Josefin Sans',sans-serif;
     text-align:center;
 }
