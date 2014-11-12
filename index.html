@@ -9,7 +9,7 @@
     <title>flop → { post title }</title>
     
     <!-- Style's -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.overload.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
@@ -34,12 +34,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">flop page's</a>
+                <a class="navbar-brand" href="/">flop page's</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle small-text" data-toggle="dropdown">Еще</a>
+                        <a href="#" class="dropdown-toggle small-text" data-toggle="dropdown">Еще <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Archive</a></li>
                             <li><a href="#">Projects</a></li>
@@ -49,13 +49,13 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="https://twitter.com/imflop" class="social-link" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://twitter.com/imflop" class="social-link" target="_blank" data-toggle="tooltip" data-placement="bottom" data-original-title="Twitter" rel="tooltip"><i class="fa fa-twitter-square"></i></a>
                     </li>
                     <li>
-                        <a href="https://github.com/imflop" class="social-link"><i class="fa fa-github-square"></i></a>
+                        <a href="https://github.com/imflop" class="social-link" target="_blank" data-toggle="tooltip" data-placement="bottom" data-original-title="Github" rel="tooltip"><i class="fa fa-github-square"></i></a>
                     </li>
                     <li>
-                        <a href="https://bitbucket.org/flop" class="social-link"><i class="fa fa-bitbucket-square"></i></a>
+                        <a href="https://bitbucket.org/flop" class="social-link" target="_blank" data-toggle="tooltip" data-placement="bottom" data-original-title="Bitbucket" rel="tooltip"><i class="fa fa-bitbucket-square"></i></a>
                     </li>
                 </ul>
             </div>
@@ -70,9 +70,9 @@
                     </div>
                     <div class="entry-content">
                         <ul class="list-unstyled">
-                            <li class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec aliquam quam. Nulla facilisi. Proin viverra posuere magna nec interdum. <a href="#">Nulla facilisi</a>.</li>
-                            <li class="p1">Cras iaculis, <a href="#">erat ac blandit suscipit</a>, purus risus imperdiet neque, sit amet facilisis ligula velit quis sapien. Duis blandit tempus erat eget imperdiet.</li>
-                            <li class="p1">Nam dapibus mauris vel quam <a heref="#">hendrerit</a> condimentum.</li>
+                            <li class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec aliquam quam. Nulla facilisi. Proin viverra posuere magna nec interdum. <a href="#">Nulla facilisi</a><sup class="btn-danger">eng</sup>.</li>
+                            <li class="p1">Cras iaculis, <a href="#">erat ac blandit suscipit</a><sup class="btn-danger">eng</sup>, purus risus imperdiet neque, sit amet facilisis ligula velit quis sapien. Duis blandit tempus erat eget imperdiet.</li>
+                            <li class="p1">Nam dapibus mauris vel quam <a href="#">hendrerit</a> condimentum.</li>
                             <li class="p1">Pellentesque tincidunt leo sed pharetra dapibus. <a href="#">Nulla et</a> erat at augue scelerisque sagittis. Vivamus vitae accumsan turpis.</li>
                             <li class="p1">Aenean ut justo orci. Nunc nec leo lacus. Mauris ornare nulla ac nisi sodales consequat. Suspendisse dictum dapibus congue. Duis <a href="#">et ipsum ipsum</a>. Nunc malesuada lacus lacus, id euismod quam cursus eu.</li>
                         </ul>
@@ -84,7 +84,7 @@
                         </span>
                         <span class="author">
                             <i class="fa fa-user"></i>
-                            <a class="" rel="author" title="View all posts by Oleg Makarov" href="#">just me</a>
+                            <a class="" rel="author" title="View all posts by Oleg Makarov" href="#">fl</a>
                         </span>
                         <span class="tweetme"></span>
                     </footer>
@@ -103,6 +103,11 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("[rel='tooltip']").tooltip();
+        });
+    </script>
 </body>
 </html>

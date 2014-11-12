@@ -1,6 +1,15 @@
 body {
     font-family: 'PT Serif', serif;
-    color: #444;
+    color: #333;
+}
+
+a {
+    color: #275ec2;
+}
+a:hover, a:focus {
+    /*color: #f12446;*/
+    /*color: #f00;*/
+    color: #275ec2;
 }
 
 .navbar-static-top {
@@ -72,8 +81,11 @@ body {
 .entry-meta {
     margin-top: 39.7px;
 }
-.entry-meta, .entry-meta a, .entry-meta a:hover {
-    color: #999;
+.entry-meta, .entry-meta a {
+    color: #666;
+}
+.entry-meta a:hover {
+    color: #888;
 }
 .post-date, .author {
     font-size: 1.27778em;
