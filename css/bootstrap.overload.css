@@ -1,0 +1,102 @@
+body {
+    font-family: 'PT Serif', serif;
+    color: #444;
+}
+
+.navbar-static-top {
+    margin-bottom: 105px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #999;
+    font-size: 24px;
+}
+.navbar-inverse .navbar-nav > li > a.small-text {
+    color: #999;
+    font-size: 16px;
+    height: 54px;
+    padding-top: 18px;
+}
+.navbar-brand {
+    font-size: 24px;
+    padding-top: 15px;
+    height: 54px;
+}
+
+.container {
+    max-width: 729px;
+}
+
+.entry:after {
+    background-image: url("../img/divider.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 23px;
+    clear: both;
+    content: "";
+    display: block;
+    height: 29.7px;
+    margin: 59.4px 0;
+    width: 100%;
+}
+
+.entry-header {
+    margin-bottom: 39.7px;
+}
+
+.entry-title {
+    font-size: 3.91111em;
+    line-height: 1.26383em;
+    text-align: center;
+}
+.entry-title a {
+    color: #444;
+}
+.entry-title a:hover, .entry-title a:focus, .entry-title a:active {
+    color: #666;
+    text-decoration: inherit; 
+}
+
+.p1 {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 29.7px;
+    margin-bottom: 15px;
+}
+
+.list-styled {
+    padding-left: 0;
+}
+
+.entry-meta {
+    margin-top: 39.7px;
+}
+.entry-meta, .entry-meta a, .entry-meta a:hover {
+    color: #999;
+}
+.post-date, .author {
+    font-size: 1.27778em;
+    margin-right: 2.5em;
+}
+
+[class*="navigation"] .nav-previous {
+    float: left;
+    width: 50%;
+}
+[class*="navigation"] .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+[class*="navigation"] a {
+    color: #444;
+    font-size: 18px;
+}
+[class*="navigation"] a:hover {
+    color: #666;
+}
+
+.navigation-post {
+
+}
