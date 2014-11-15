@@ -10,11 +10,10 @@
     
     <!-- Style's -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.overload.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.overload.min.css">
+    
 
-    <!-- Font's -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+    
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -38,7 +37,10 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
+                    <li><a href="#">archive</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">about</a></li>
+                    <!--<li class="dropdown">
                         <a href="#" class="dropdown-toggle small-text" data-toggle="dropdown">Еще <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Archive</a></li>
@@ -47,7 +49,7 @@
                             <li class="divider"></li>
                             <li><a href="#">Feed</a></li>
                         </ul>
-                    </li>
+                    </li>-->
                     <li>
                         <a href="https://twitter.com/imflop" class="social-link" target="_blank" data-toggle="tooltip" data-placement="bottom" data-original-title="Twitter" rel="tooltip"><i class="fa fa-twitter-square"></i></a>
                     </li>
@@ -62,7 +64,7 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row">
+        <div class="row mgb-60">
             <div class="col-sm-12">
                 <article class="entry">
                     <div class="entry-header">
@@ -70,11 +72,11 @@
                     </div>
                     <div class="entry-content">
                         <ul class="list-unstyled">
-                            <li class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec aliquam quam. Nulla facilisi. Proin viverra posuere magna nec interdum. <a href="#">Nulla facilisi</a><sup class="btn-danger">eng</sup>.</li>
-                            <li class="p1">Cras iaculis, <a href="#">erat ac blandit suscipit</a><sup class="btn-danger">eng</sup>, purus risus imperdiet neque, sit amet facilisis ligula velit quis sapien. Duis blandit tempus erat eget imperdiet.</li>
+                            <li class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec aliquam quam. Nulla facilisi. Proin viverra posuere magna nec interdum. <a href="#">Nulla facilisi</a><sup>eng</sup>.</li>
+                            <li class="p1">Cras iaculis, <a href="#">erat ac blandit suscipit</a><sup>eng</sup>, purus risus imperdiet neque, sit amet facilisis ligula velit quis sapien. Duis blandit tempus erat eget imperdiet.</li>
                             <li class="p1">Nam dapibus mauris vel quam <a href="#">hendrerit</a> condimentum.</li>
                             <li class="p1">Pellentesque tincidunt leo sed pharetra dapibus. <a href="#">Nulla et</a> erat at augue scelerisque sagittis. Vivamus vitae accumsan turpis.</li>
-                            <li class="p1">Aenean ut justo orci. Nunc nec leo lacus. Mauris ornare nulla ac nisi sodales consequat. Suspendisse dictum dapibus congue. Duis <a href="#">et ipsum ipsum</a>. Nunc malesuada lacus lacus, id euismod quam cursus eu.</li>
+                            <li class="p1">Aenean ut justo orci. Nunc nec leo lacus. Mauris ornare nulla ac nisi sodales consequat. Suspendisse dictum dapibus congue. Duis <a href="#">et ipsum ipsum</a><sup>eng</sup>. Nunc malesuada lacus lacus, id euismod quam cursus eu.</li>
                         </ul>
                     </div>
                     <footer class="entry-meta">
@@ -100,10 +102,19 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <p>my footer there</p>
+        </div>
+    </footer>
+
 
     <!-- Latest compiled and minified JavaScript -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- Font's -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <script type="text/javascript">
         $(function() {
             $("[rel='tooltip']").tooltip();
