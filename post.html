@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="fl" name="author">
 
-    <title>flop → { post title }</title>
+    <title>flop → { Пост про что нибудь связанное с программированием }</title>
 
     <!-- Style's -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -24,7 +24,7 @@
     <!-- Images & icons -->
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation"><!-- begin navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -52,13 +52,13 @@
                 </ul>
             </div>
         </div>
-    </nav><!-- end navbar -->
-    <div class="container"><!-- begin main container -->
+    </nav>
+    <div class="container">
         <div class="row mgb-60">
             <div class="col-sm-12">
                 <article class="entry">
                     <div class="entry-header">
-                        <h1 class="entry-title"><a href="#">Подборка интересных материалов из мира IT за ноябрь</a></h1>
+                        <h1 class="entry-title">Пост про что нибудь связанное с программированием</h1>
                     </div>
                     <div class="entry-meta">
                         <span class="author">
@@ -69,13 +69,26 @@
                         </span>
                     </div>
                     <div class="entry-content">
-                        <ol>
-                            <li class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec aliquam quam. Nulla facilisi. Proin viverra posuere magna nec interdum. <a href="#">Nulla facilisi</a><sup>en</sup>.</li>
-                            <li class="p1">Cras iaculis, <a href="#">erat ac blandit suscipit</a><sup>en</sup>, purus risus imperdiet neque, sit amet facilisis ligula velit quis sapien. Duis blandit tempus erat eget imperdiet.</li>
-                            <li class="p1">Nam dapibus mauris vel quam <a href="#">hendrerit</a> condimentum.</li>
-                            <li class="p1">Pellentesque tincidunt leo sed pharetra dapibus. <a href="#">Nulla et</a> erat at augue scelerisque sagittis. Vivamus vitae accumsan turpis.</li>
-                            <li class="p1">Aenean ut justo orci. Nunc nec leo lacus. Mauris ornare nulla ac nisi sodales consequat. Suspendisse dictum dapibus congue. Duis <a href="#">et ipsum ipsum</a><sup>en</sup>. Nunc malesuada lacus lacus, id euismod quam cursus eu.</li>
-                        </ol>
+                        <p class="p">Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий условий активизации. Идейные соображения высшего порядка, а также новая модель организационной деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            <pre><code># -*- coding: utf-8 -*-
+
+import datetime
+from flask import url_for
+from flog import db
+
+
+class Post(db.Document):
+    post_title = db.StringField(max_length=256, required=True)
+    post_slug = db.StringField(max_length=256, required=True)
+    post_text = db.StringField(required=True)
+    post_date = db.DateTimeField(default=datetime.datetime.now, required=True)
+
+    def get_absolute_url(self):
+        return url_for('post', kwargs={'slug': self.post_slug})
+
+    def __unicode__(self):
+        return self.post_title</code></pre>
+                        <p class="p">Идейные соображения высшего порядка, а также укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Задача организации, в особенности же рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом дальнейшее развитие различных форм деятельности играет важную роль в формировании модели развития. Товарищи! новая модель организационной деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Равным образом сложившаяся структура организации позволяет оценить значение форм развития. С другой стороны реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации модели развития.</p>
                     </div>
                 </article>
                 <div class="navigation-post">
@@ -88,12 +101,12 @@
                 </div>
             </div>
         </div>
-    </div><!-- end main container -->
-    <footer class="footer"><!-- begin footer -->
+    </div>
+    <footer class="footer">
         <div class="container">
             <p>my footer there</p>
         </div>
-    </footer><!-- end footer -->
+    </footer>
 
 
     <!-- Latest compiled and minified JavaScript -->
