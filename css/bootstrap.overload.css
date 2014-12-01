@@ -1,3 +1,7 @@
+
+/* Global settings
+============================================================================ */
+
 html {
   position: relative;
   min-height: 100%;
@@ -24,6 +28,10 @@ sup {
     color: rgba(142, 146, 166, 0.96);;
 }
 
+
+/* Navbar settings 
+============================================================================ */
+
 .navbar-static-top {
     margin-bottom: 85px;
 }
@@ -43,6 +51,10 @@ sup {
     padding-top: 15px;
     height: 54px;
 }
+
+
+/* Content settings 
+============================================================================ */
 
 .container {
     max-width: 729px;
@@ -81,11 +93,9 @@ sup {
     margin: 59.4px 0;
     width: 100%;
 }
-
 .entry-header {
     margin-bottom: 39.7px;
 }
-
 .entry-title {
     font-size: 2.91111em;
     line-height: 1.26383em;
@@ -107,10 +117,15 @@ sup {
     margin-bottom: 15px;
 }
 
-.list-styled {
-    padding-left: 0;
+.p {
+    font-size: 1.38632em;
+    line-height: 1.56em;
+    margin-bottom: 2.4em;
 }
 
+
+/* Navigation bottom post settings 
+============================================================================ */
 
 [class*="navigation"] .nav-previous {
     float: left;
@@ -129,6 +144,10 @@ sup {
     color: #666;
 }
 
+
+/* Footer settings 
+============================================================================ */
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -143,6 +162,14 @@ sup {
     margin: 0;
 }
 
-/* Helper classes
+/* Helper & Hack classes
 ========================================================================== */
 .mgb-60 { margin-bottom: 60px; }
+
+.list-group-item {
+    font-size: 2.41111em;
+    line-height: 1.36383em;
+    text-align: center;
+    border: none;
+    margin-bottom: 15px;
+}
