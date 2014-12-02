@@ -103,8 +103,34 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <script type="text/javascript">
+        function findBootstrapEnvironment() {
+            var envs = ['xs', 'sm', 'md', 'lg'];
+
+            $el = $('<div>');
+            $el.appendTo($('body'));
+
+            for (var i = envs.length - 1; i >= 0; i--) {
+                var env = envs[i];
+
+                $el.addClass('hidden-'+env);
+                if ($el.is(':hidden')) {
+                    $el.remove();
+                    return env
+                }
+            };
+        }
+
+        var t = findBootstrapEnvironment();
+        console.log(t);
+
         $(function() {
-            $("[rel='tooltip']").tooltip();
+            bsenv = findBootstrapEnvironment();
+            if (bsenv == 'xs') {
+                $("[rel='tooltip']").tooltip({placement: 'right'});
+            } else {
+                $("[rel='tooltip']").tooltip({placement: 'bottom'});
+            }
+            
         });
     </script>
 </body>
