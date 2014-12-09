@@ -57,11 +57,27 @@
         <div class="row mgb-60">
             <div class="col-sm-12">
                 <ul class="list-group row">
-                    <li class="list-group-item col-xs-12 col-md-6"><a href="#">Some title gose here</a></li>
-                    <li class="list-group-item col-xs-12 col-md-6"><a href="#">Test for more words in the title and here we go</a></li>
-                    <li class="list-group-item col-xs-12 col-md-6"><a href="#">Тест на руссыкий язык в заголовке поста</a></li>
-                    <li class="list-group-item col-xs-12 col-md-6"><a href="post.html">Пост про что нибуль связанное с программированием</a></li>
-                    <li class="list-group-item col-xs-12 col-md-6"><a href="#">Give me more title's not equal</a></li>
+                    <li class="list-group-item col-xs-12 col-md-6">
+                        <a href="#">Some title gose here</a>
+                        <span class="smaller"><time datetime="2014-09-15T10:00" title="15.09.2014 в 10:00">9 декабря 2014</time></span>
+                    </li>
+                    </li>
+                    <li class="list-group-item col-xs-12 col-md-6">
+                        <a href="#">Test for more words in the title and here we go</a>
+                        <span class="smaller"><time datetime="2014-09-15T10:00" title="15.09.2014 в 10:00">8 декабря 2014</time></span>
+                    </li>
+                    <li class="list-group-item col-xs-12 col-md-6">
+                        <a href="#">Тест на руссыкий язык в заголовке поста</a>
+                        <span class="smaller"><time datetime="2014-09-15T10:00" title="15.09.2014 в 10:00">3 декабря 2014</time></span>
+                    </li>
+                    <li class="list-group-item col-xs-12 col-md-6">
+                        <a href="post.html">Пост про что нибуль связанное с программированием</a>
+                        <span class="smaller"><time datetime="2014-09-15T10:00" title="15.09.2014 в 10:00">2 декабря 2014</time></span>
+                    </li>
+                    <li class="list-group-item col-xs-12 col-md-6">
+                        <a href="#">Give me more title's not equal</a>
+                        <span class="smaller"><time datetime="2014-09-15T10:00" title="15.09.2014 в 10:00">1 декабря 2014</time></span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -79,9 +95,19 @@
     <!-- Font's -->
     <link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment-with-locales.min.js"></script>
     <script type="text/javascript">
         $(function() {
             $("[rel='tooltip']").tooltip();
+        });
+
+        $(function() {
+            moment.locale('ru');
+            t = moment("2014-02-01T23:07").fromNow();
+            d = moment("2014-02-15T23:07").format('D.MM.YYYY, [в] HH:mm');
+            console.log(t);
+            console.log(d);
         });
     </script>
 </body>
