@@ -84,6 +84,15 @@ pre {
     display: inline;
     margin: 0 0.5rem;
 }
+.article-tag {
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    list-style: none;
+    text-align: center;
+}
+.article-tag li {
+    display: inline-block;
+}
 
 .entry:after {
     background-image: url("../img/divider.png");
