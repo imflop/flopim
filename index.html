@@ -11,9 +11,9 @@
     <!-- Style's -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.overload.css">
-    
 
-    
+
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -60,6 +60,7 @@
                     <div class="entry-header">
                         <h1 class="entry-title"><a href="#">Подборка интересных материалов из мира IT за ноябрь</a></h1>
                     </div>
+                    <hr><br><br>
                     <div class="entry-meta">
                         <span class="author">
                             <a rel="author" title="View all posts by Oleg Makarov" href="#">fl</a>
@@ -78,20 +79,33 @@
                         </ol>
                     </div>
                 </article>
-                <div class="navigation-post">
+                <hr>
+                <br>
+                <br>
+                <!--<div class="navigation-post">
                     <div class="nav-previous">
                         <a href="#" rel="prev">&larr;&nbsp;Super puper previous post with links</a>
                     </div>
                     <div class="nav-next">
                         <a href="#" rel="next">Super duper next post with links тестируем большое количество символов в заголовке поста&nbsp;&rarr;</a>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div><!-- end main container -->
     <footer class="footer"><!-- begin footer -->
         <div class="container">
-            <p>my footer there</p>
+            <span class="footer-contact">Свяжитесь со мной:</span><br>
+            <span class="footer-links">{
+                <a href="https://twitter.com/imflop" target="_blank">Twitter</a>
+                } &mdash; {
+                <a href="https://github.com/imflop" target="_blank">GitHub</a>
+                } &mdash; {
+                <a href="https://bitbucket.org/flop" target="_blank">Bitbucket</a>
+                } &mdash; {
+                <a href="mailto:imflop@gmail.com">Email</a>
+                }
+            </span>
         </div>
     </footer><!-- end footer -->
 
@@ -130,7 +144,7 @@
             } else {
                 $("[rel='tooltip']").tooltip({placement: 'bottom'});
             }
-            
+
         });
     </script>
 </body>

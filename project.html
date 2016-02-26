@@ -11,9 +11,9 @@
     <!-- Style's -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.overload.css">
-    
 
-    
+
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -60,6 +60,7 @@
                     <div class="entry-header">
                         <h1 class="entry-title">td: a lightweight cli todo applications</h1>
                     </div>
+                    <hr><br><br>
                     <div class="entry-meta">
                         <span class="author">
                             <a rel="author" title="View all posts by Oleg Makarov" href="#">fl</a>
@@ -200,31 +201,48 @@ if __name__ == '__main__':
                         <p class="p1">Идейные соображения высшего порядка, а также укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Задача организации, в особенности же рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом дальнейшее развитие различных форм деятельности играет важную роль в формировании модели развития. Товарищи! новая модель организационной деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Равным образом сложившаяся структура организации позволяет оценить значение форм развития. С другой стороны реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации модели развития.</p>
                     </div>
                 </article>
-                <div class="navigation-post">
+                <hr><br><br>
+                <!--<div class="navigation-post">
                     <div class="nav-previous">
                         <a href="#" rel="prev">&larr;&nbsp;Super puper previous post with links</a>
                     </div>
                     <div class="nav-next">
                         <a href="#" rel="next">Super duper next post with links тестируем большое количество символов в заголовке поста&nbsp;&rarr;</a>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer"><!-- begin footer -->
         <div class="container">
-            <p>my footer there</p>
+            <span class="footer-contact">Свяжитесь со мной:</span><br>
+            <span class="footer-links">{
+                <a href="https://twitter.com/imflop" target="_blank">Twitter</a>
+                } &mdash; {
+                <a href="https://github.com/imflop" target="_blank">GitHub</a>
+                } &mdash; {
+                <a href="https://bitbucket.org/flop" target="_blank">Bitbucket</a>
+                } &mdash; {
+                <a href="mailto:imflop@gmail.com">Email</a>
+                }
+            </span>
         </div>
-    </footer>
+    </footer><!-- end footer -->
 
 
     <!-- Latest compiled and minified JavaScript -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- Highlight.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow.min.css" rel="stylesheet" type='text/css'>
     <!-- Font's -->
     <link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <script type="text/javascript">
+        $(function() {
+            hljs.initHighlightingOnLoad();
+        });
         $(function() {
             $("[rel='tooltip']").tooltip();
         });
