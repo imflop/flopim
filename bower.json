@@ -1,0 +1,26 @@
+{
+  "name": "flopim2",
+  "version": "2.0.0",
+  "authors": [
+    "imflop <imflop@gmail.com>"
+  ],
+  "description": "new theme",
+  "main": "index.html",
+  "keywords": [
+    "new",
+    "theme"
+  ],
+  "license": "MIT",
+  "homepage": "imflop.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0"
+  }
+}
